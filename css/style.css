@@ -1,3 +1,15 @@
+body { background-color: #e8e8e8; font-family: 'Raleway', sans-serif; padding: 0; margin: 0; line-height: 1.5; }
 
+header { background-color: #fb0; padding: 8px; }
+header .wrapper { width: 100%; margin: 0 auto; }
+
+.white-card { margin: auto; background-color: white; width: 70%; padding: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+.white-card #input-item { padding: 10px; width: 90%; }
+
+.each-to-do .checkbox { height: 1rem; width: 1rem; border: 1px solid gray; margin-right: 10px; }
+
+.unchecked { color: black; text-decoration: none; }
+
+.checked { text-decoration: line-through; color: gray; font-style: italic; }
 
 /*# sourceMappingURL=style.css.map */
