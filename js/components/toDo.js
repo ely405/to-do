@@ -26,10 +26,12 @@ const createToDo = ()=>{
 
 const createToDoItem = (data, update)=>{
   const containsAThingToDo = $('<div/>', {'class':'each-to-do'});
+  const containsCheckAndContentToDo = $('<div/>');
   const checkbox = $('<input/>', {'type':'checkbox', 'class':'checkbox'});
   const contentOfThingToDo = $('<span/>').text(data.text);
   const buttonRemove = $('<button/>').text('Remove');
-  containsAThingToDo.append(checkbox, contentOfThingToDo, buttonRemove);
+  containsCheckAndContentToDo.append(checkbox, contentOfThingToDo);
+  containsAThingToDo.append(containsCheckAndContentToDo, buttonRemove);
 
   checkbox.on('change', (e)=>{
     data.completed = !data.completed;

@@ -1,6 +1,5 @@
 'use strict';
 const documentLoad = ()=>{
-  alert("doc load");
   const root = $('.root');
   render(root);
 }
